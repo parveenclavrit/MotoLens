@@ -1,0 +1,27 @@
+<ion-app >
+  
+  <span class="block"><strong>REPORT</strong></span>
+
+  <ion-grid >
+    <ion-row style= "margin-top: 20px;" >
+      <ion-col size="4"> 
+        <ion-button (click)="shareViaWhatsApp()"  color="success"  fill="clear" style="font-size: 2em; margin: 0px; padding: 0px;">
+        <ion-icon name="logo-whatsapp"></ion-icon>
+      </ion-button></ion-col>
+      <ion-col size="4"><ion-button (click)="shareViaFacebook()"  color="primary"  fill="clear"
+        style="font-size: 2em;margin: 0px;padding: 0;">
+        <ion-icon name="logo-facebook"></ion-icon>
+      </ion-button></ion-col>
+      <ion-col size="4"> <ion-button (click)="shareViaTwitter()" color="secondary"  fill="clear"
+        style="font-size: 2em;margin: 0px;padding: 0%;">
+        <ion-icon name="logo-twitter"></ion-icon>
+      </ion-button></ion-col>
+    </ion-row>
+  </ion-grid>
+ 
+
+  <div style="text-align: center;">
+    <ion-button mat-button [mat-dialog-close]="true" class="ok-button"  shape="round" color="light">Cancel</ion-button>
+  </div>
+
+</ion-app>
