@@ -1,0 +1,10 @@
+{
+    "/api": {
+    "target": "http://13.49.207.165:8000",
+    "secure": false,
+    "pathRewrite": {
+        "^/api": "/traffic/api/upload/"
+      },
+      "changeOrigin": true
+    }
+    }
